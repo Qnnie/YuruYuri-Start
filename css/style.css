@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+:root {
+    --box1-color: #F7F4F3;    
+    --box2-color: #CF888C;    
+    --box5-color: #F1D7DB;
+    --box4-color: #F2E2CE;    
+    --box3-color: #7E6371;
+    --search-bar: #575757;
+}
+
+* {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    background: #dadada;
+}
+
+#container {
+    /*Responsive width and height*/
+    width: 80%;
+    height: 70%;
+    /*Centers the Div on the page*/
+    position: fixed; 
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    /*Grid used for elements inside*/
+        /*Search 10% Main 90%*/
+    display: grid;
+    grid-template-rows: 10% 90%;
+}
+
+#search {
+    background-color: var(--search-bar);
+    border: 3px solid var(--box1-color);    
+    border-bottom: 0px; 
+}
+
+#main-area {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    border: 3px solid var(--box1-color);    
+}
+
+#main-area h3 { 
+    /*For all categories, center them between img and border*/
+    color: white;
+    text-shadow: 1px 2px black;
+    font-size: 2rem;
+    position: fixed;
+    display: inline;
+    padding: 5px 10px;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+#main-area ul {
+    list-style-type: none;
+    margin-left: -25px;
+    font-weight: 500;
+}
+
+/*LINKS*/
+#main-area a {
+    text-decoration: none;
+    color: rgba(0,0,0,0.3);
+    font-size: 1.3rem;
+    letter-spacing: 0.3rem;
+}
+
+#box-1 {
+    background: var(--box1-color);
+}
+
+#box-1 h1 {
+    float: right;
+    text-shadow: 2px 2px var(--box2-color);
+    color: var(--search-bar);
+}
+
+#box-1 h2 {
+    text-shadow: 1px 1px var(--box2-color);
+    color: var(--search-bar);
+}
+
+#box-2 {
+    background: var(--box2-color);
+}
+
+#box-3 {
+    background: var(--box3-color);
+}
+
+#box-4 {
+    background: var(--box4-color);
+}
+
+#box-5 {
+    background: var(--box5-color);
+}
