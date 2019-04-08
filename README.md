@@ -13,7 +13,7 @@ How To Use as startpage
           <li>Go to your browser settings and enter custom 'on startup' link</li>
 </ol>    
 
-Configure Links (once downloaded)
+Configure Links 
 ----------------------------
 Open up index.html and look for 
 ```html
