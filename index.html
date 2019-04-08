@@ -7,20 +7,27 @@
 
     <!--CSS-->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>Yuru Start</title>
 </head>
 <body>
     <div id="container">
-        <div id="search"></div>
+        <div id="search">
+            <form action="https://www.google.com/search" class="searchform" method="get" name="searchform" target="_blank">
+                <input name="sitesearch" type="hidden" value="">
+                <input autocomplete="off" id ='google-search' name="q" placeholder="Search" required="required" type="text">
+            </form>
+        </div>
         <div id="main-area">
             <div id="box-1">
-                <img src='images/ghost_akari.png' width='80px' height='auto'>
+                <img src='images/ghost_akari.png' width='auto' height='120px'>
                 <h1>あかり</h1>
-                <h2>April 5, 9:35</h2>
+                <p><span id='date'></span><span id="clock"></span></p>
             </div>
             <div id="box-2">
-                <img src='images/akari.png' width='90px' height='auto'>
+                <img src='images/akari.png' width='auto' height='120px'>
                 <h3>Anime</h3>
                 <ul>
                     <li><a href='#'>KissAnime</a></li>
@@ -30,7 +37,7 @@
                 </ul>
             </div>
             <div id="box-3">
-                <img src='images/yui.png' width='80px' height='auto'>
+                <img src='images/yui.png' width='auto' height='120px'>
                 <h3>Social</h3>
                 <ul>
                     <li><a href='#'>YouTube</a></li>
@@ -39,7 +46,7 @@
                 </ul>
             </div>
             <div id="box-4">
-                <img src='images/kyoko.png' width='100px' height='auto'>
+                <img src='images/kyoko.png' width='auto' height='120px'>
                 <h3>Dev.</h3>
                 <ul>
                     <li><a href='#'>Github</a></li>
@@ -48,7 +55,7 @@
                 </ul>
             </div>
             <div id="box-5">
-                <img src='images/chinatsu.png' width='110px' height='auto'>
+                <img src='images/chinatsu.png' width='auto' height='120px'>
                 <h3>Misc.</h3>
                 <ul>
                     <li><a href='#'>Sound Cloud</a></li>
@@ -56,5 +63,7 @@
             </div>
         </div>
     </div>
+    <!--JS-->
+    <script src='js/clock.js'></script>
 </body>
 </html>

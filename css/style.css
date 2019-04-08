@@ -2,10 +2,10 @@
 
 :root {
     --box1-color: #F7F4F3;    
-    --box2-color: #CF888C;    
+    --box2-color: rgb(219, 177, 179);    
     --box5-color: #F1D7DB;
     --box4-color: #F2E2CE;    
-    --box3-color: #7E6371;
+    --box3-color: rgb(214, 170, 193);
     --search-bar: #575757;
 }
 
@@ -15,7 +15,9 @@
 }
 
 body {
-    background: #dadada;
+    background: url('');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #container {
@@ -32,6 +34,21 @@ body {
         /*Search 10% Main 90%*/
     display: grid;
     grid-template-rows: 10% 90%;
+}
+
+form {
+    display: inline;
+}
+
+ #google-search {  
+    border: none;
+    width: 100%;
+    height: 100%;
+    background: var(--search-bar);
+    color: white;
+    font-size: 1.4rem;
+    text-align: center;
+    outline: none;
 }
 
 #search {
@@ -62,28 +79,45 @@ body {
     list-style-type: none;
     margin-left: -25px;
     font-weight: 500;
+    text-align: center;
+    margin-top: 20%;
 }
 
 /*LINKS*/
 #main-area a {
     text-decoration: none;
-    color: rgba(0,0,0,0.3);
+    color: var(--search-bar);
     font-size: 1.3rem;
     letter-spacing: 0.3rem;
+    background-image: linear-gradient(to right, white 0, white 100%);
+    background-position: 0 1.5rem;
+    background-size: 0 5%;
+    background-repeat: no-repeat;
+    transition: background .4s;
+}
+
+#main-area a:hover {
+    color: white;
+    background-size: 100% 2px;  
 }
 
 #box-1 {
     background: var(--box1-color);
+    position: relative;
 }
 
 #box-1 h1 {
+    font-weight: 700;
     float: right;
-    text-shadow: 2px 2px var(--box2-color);
     color: var(--search-bar);
 }
 
-#box-1 h2 {
-    text-shadow: 1px 1px var(--box2-color);
+#box-1 p {
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    font-size:1.5rem;
+    font-weight: 900;
     color: var(--search-bar);
 }
 
