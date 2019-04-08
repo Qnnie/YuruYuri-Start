@@ -1,7 +1,7 @@
 # YuruYuri-Start
 <img src='images/preview.png'>
 
-<a href='https://qnnie.github.io/YuruYuri-Start>Live</a>
+[Demo](https://qnnie.github.io/YuruYuri-Start/)
 
 Configure Links
 ----------------------------
