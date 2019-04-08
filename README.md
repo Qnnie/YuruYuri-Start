@@ -12,6 +12,7 @@ How To Use as startpage
           <li>Enable github pages</li>
           <li>Go to your browser settings and enter custom 'on startup' link</li>
 </ol>    
+
 Configure Links (once downloaded)
 ----------------------------
 Open up index.html and look for 
