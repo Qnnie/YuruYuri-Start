@@ -6,7 +6,7 @@
     --box5-color: #F1D7DB;
     --box4-color: #F2E2CE;    
     --box3-color: rgb(214, 170, 193);
-    --search-bar: #575757;
+    --search-bar: #C06C73;
 }
 
 * {
@@ -15,7 +15,7 @@
 }
 
 body {
-    background: url('');
+    background: url('https://images5.alphacoders.com/728/728138.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
